@@ -5,8 +5,8 @@ const coffeePrice = 1.25
 // const sumOfCoffies = 13.75
 
 // `The total bill is ${total}`
-const name = (params) => {
-    
+const multipier = (arr) => {
+	let sumOfCoffies = arr.reduce((previous, current) => (previous += current))
+	return `The total bill is ${sumOfCoffies * coffeePrice}`
 }
-
-console.log(`The total bill is ${sumOfCoffies}`)
+console.log(multipier(bills))
